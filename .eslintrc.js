@@ -11,6 +11,9 @@ module.exports = {
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
+        ecmaFeatures: {
+            jsx: true,
+        },
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
@@ -42,7 +45,7 @@ module.exports = {
             'error',
             {
                 markupOnly: true,
-                ignoreAttribute: ['data-testid'],
+                ignoreAttribute: ['data-testid', 'to'],
             },
         ],
         'max-len': ['error', { code: 100, ignoreComments: true }],
