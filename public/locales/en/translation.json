@@ -1,10 +1,13 @@
 {
+  "About": "About",
+  "Main": "Main",
   "Test example": "Test example",
   "translate": "translate",
   "main page": "main page",
   "language": "Русский",
+  "toggle": "toggle",
   "Страница не найдена": "Page not found",
-  "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
-  "Обновить страницу": "Обновить страницу",
+  "Произошла непредвиденная ошибка": "An unexpected error has occurred",
+  "Обновить страницу": "Update page",
   "throw error": "throw error"
 }
