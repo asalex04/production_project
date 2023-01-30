@@ -6,7 +6,8 @@ module.exports = {
     extends: [
         'plugin:react/recommended',
         'standard-with-typescript',
-        'plugin:react/jsx-runtime'
+        'plugin:react/jsx-runtime',
+        'plugin:i18next/recommended'
     ],
     overrides: [
     ],
@@ -16,7 +17,9 @@ module.exports = {
         project: ['./tsconfig.json']
     },
     plugins: [
-        'react'
+        'react',
+        '@typescript-eslint',
+        'i18next'
     ],
     rules: {
         indent: [2, 4],
