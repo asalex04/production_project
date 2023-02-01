@@ -32,5 +32,6 @@ module.exports = {
     },
     globals: {
         __IS_DEV__: true
-    }
+    },
+    ignorePatterns: ['/config/jest/jest.config.ts', '/config/jest/jestEmptyComponent.tsx']
 }
