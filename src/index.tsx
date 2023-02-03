@@ -6,7 +6,7 @@ import { ThemeProvider } from './app/providers/ThemeProvider'
 import { ErrorBoundary } from 'app/providers/ErrorBoundary'
 
 const root = ReactDOM.createRoot(
-    document.getElementById('root') as HTMLElement
+    document.getElementById('root')
 )
 
 root.render(

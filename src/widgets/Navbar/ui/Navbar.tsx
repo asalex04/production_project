@@ -10,7 +10,7 @@ interface NavbarProps {
 export const Navbar = ({ className }: NavbarProps) => {
     const { t } = useTranslation()
     return (
-        <div className={classNames(cls.navbar, {}, [className!])}>
+        <div className={classNames(cls.navbar, {}, [className])}>
             <div className={cls.links}>
                 <AppLink to={'/about'}>{t('About')}</AppLink>
                 <AppLink to={'/'} className={cls.mainLink}>{t('Main')}</AppLink>
