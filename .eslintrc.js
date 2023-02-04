@@ -24,7 +24,8 @@ module.exports = {
         '@typescript-eslint/strict-boolean-expressions': 'off',
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
         '@typescript-eslint/ban-ts-comment': 'off',
-        '@typescript-eslint/naming-convention': 'off'
+        '@typescript-eslint/naming-convention': 'off',
+        '@typescript-eslint/consistent-type-assertions': 'off'
     },
     globals: {
         __IS_DEV__: true
