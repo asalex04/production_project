@@ -1,4 +1,4 @@
-name: GitHub Actions Demo
+name: linting, testing, building
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   push:
@@ -8,6 +8,9 @@ on:
 jobs:
   pipeline:
     runs-on: macos-latest
+    strategy:
+      matrix:
+        node-version: [ 18.x ]
     steps:
       - uses: actions/checkout@v3
       - name: Staring Node.js ${{ matrix.node-version }}
