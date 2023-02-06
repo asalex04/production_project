@@ -6,11 +6,8 @@ on:
   pull_request:
     brunches: [master]
 jobs:
-  pipline:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [ 18.x ]
+  pipeline:
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
       - name: Staring Node.js ${{ matrix.node-version }}
