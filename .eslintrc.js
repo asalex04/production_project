@@ -14,7 +14,12 @@ module.exports = {
         sourceType: 'module',
         project: ['./tsconfig.json']
     },
-    plugins: ['react', '@typescript-eslint', 'i18next'],
+    plugins: [
+        'react',
+        '@typescript-eslint',
+        'i18next',
+        'react-hooks'
+    ],
     rules: {
         indent: [2, 4],
         '@typescript-eslint/indent': [2, 4],
@@ -25,7 +30,9 @@ module.exports = {
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
         '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/naming-convention': 'off',
-        '@typescript-eslint/consistent-type-assertions': 'off'
+        '@typescript-eslint/consistent-type-assertions': 'off',
+        'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
+        'react-hooks/exhaustive-deps': 'error' // Checks effect dependencies
     },
     globals: {
         __IS_DEV__: true
@@ -34,8 +41,8 @@ module.exports = {
     overrides: [{
         files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
         rules: {
-            'i18next/no-literal-string': 'off'
-            // 'max-len': 'off'
+            'i18next/no-literal-string': 'off',
+            'max-len': 'off'
         }
     }]
 }
