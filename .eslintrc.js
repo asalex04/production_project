@@ -31,6 +31,7 @@ module.exports = {
         '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/naming-convention': 'off',
         '@typescript-eslint/consistent-type-assertions': 'off',
+        'react/display-name': 'off',
         'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
         'react-hooks/exhaustive-deps': 'error' // Checks effect dependencies
     },
